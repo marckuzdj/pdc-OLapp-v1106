@@ -542,7 +542,7 @@
 
 		// 🛰️ LOG DE RASTREIO NO NAVEGADOR
         console.log("-> Resposta recebida do Apps Script:", res);
-        dispararLogConf("CONEXAO_RES_BACKEND", `-> Resposta recebida do Apps Script: ${typeof res === 'object' ? JSON.stringify(res) : res}`);
+        dispararLogOL("CONEXAO_RES_BACKEND", `-> Resposta recebida do Apps Script: ${typeof res === 'object' ? JSON.stringify(res) : res}`);
 
         if (typeof processarVerificacaoExpirada === "function" && processarVerificacaoExpirada(res)) {
             return; 
